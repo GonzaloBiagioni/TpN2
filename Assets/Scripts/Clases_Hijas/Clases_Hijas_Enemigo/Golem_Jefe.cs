@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Golem_Jefe : MonoBehaviour
+public class Golem_Jefe : Enemigo
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void atacar()
     {
-        
+        base.atacar(); // esto se usa si el ataque es igual al base
+        //acá se agregaría la lógica para que haga su ataque especial
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void moverse()
     {
-        
+        base.moverse(); // esto se usa si el movimiento es igual al base
+        //acá se agregaría la lógica para que haga un movimiento especial de ser necesario
+    }
+
+    public override void RecibirDaño()
+    {
+        base.RecibirDaño();
     }
 }

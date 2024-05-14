@@ -17,6 +17,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
+
         distance = Vector2.Distance(transform.position, player.transform.position);
         Vector2 direction = player.transform.position - transform.position;
 

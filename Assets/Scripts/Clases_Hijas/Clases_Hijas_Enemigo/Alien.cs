@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Alien : Enemigo
 {
-    public override void atacar()
+    public override void Atacar()
     {
-        base.atacar(); // esto se usa si el ataque es igual al base
+        base.Atacar(); // esto se usa si el ataque es igual al base
         //acá se agregaría la lógica para que haga su ataque especial
     }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : Personaje
 {
-    public override void atacar()
+    public override void Atacar()
     {
         //lógica para que ataque
     }

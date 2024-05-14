@@ -1,21 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
-public class NPC : Personaje
+public class NPC : MonoBehaviour
 {
-    public override void atacar()
-    {
-        //va vacío
-    }
-    public override void RecibirDaño()
-    {
-        //va vacío
-    }
 
-    public override void moverse()
+    public int Velocidad;
+    
+    public  void moverse()
     {
-        //lógica para que se mueva
+        //lógica para que se mueva.
     }
 
 }

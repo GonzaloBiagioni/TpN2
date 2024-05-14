@@ -6,16 +6,18 @@ public class Llama_Azul : Enemigo
 {
     public override void atacar()
     {
-        //lógica para que ataque
+        base.atacar(); // esto se usa si el ataque es igual al base
+        //acá se agregaría la lógica para que haga su ataque especial
     }
 
     public override void moverse()
     {
-        //lógica para que se mueva
+        base.moverse(); // esto se usa si el movimiento es igual al base
+        //acá se agregaría la lógica para que haga un movimiento especial de ser necesario
     }
 
     public override void RecibirDaño()
     {
-        //lógica para recibir daño
+        base.RecibirDaño();
     }
 }

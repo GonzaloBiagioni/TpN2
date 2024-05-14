@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 801c749e843dd144dafc7d3731cabd91
+guid: 0859319c96bc02f4cbd97e59d6b8b354
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,7 +113,7 @@ TextureImporter:
       name: TilesetFloor_0
       rect:
         serializedVersion: 2
-        x: 177
+        x: 193
         y: 210
         width: 15
         height: 14

@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Alien : MonoBehaviour
+public class Alien : Enemigo
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void atacar()
     {
-        
+        //lógica para que ataque
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void moverse()
     {
-        
+        //lógica para que se mueva
+    }
+
+    public override void RecibirDaño()
+    {
+        //lógica para recibir daño
     }
 }

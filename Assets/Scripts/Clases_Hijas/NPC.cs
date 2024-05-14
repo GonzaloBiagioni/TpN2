@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : MonoBehaviour
+public class NPC : Personaje
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void atacar()
     {
-        
+        //va vacío
+    }
+    public override void RecibirDaño()
+    {
+        //va vacío
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void moverse()
     {
-        
+        //lógica para que se mueva
     }
+
 }

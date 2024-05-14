@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemigo : Personaje
 {
-    public override void atacar()
+    public override void Atacar()
     {
         //lógica para que ataque
     }
@@ -18,4 +18,5 @@ public class Enemigo : Personaje
     {
         //lógica para recibir daño
     }
+
 }

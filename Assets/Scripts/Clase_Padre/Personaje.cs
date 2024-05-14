@@ -8,7 +8,7 @@ public abstract class Personaje : MonoBehaviour
     public int daño;
     public int VelocidadMovimiento;
 
-    public abstract void atacar();
+    public abstract void Atacar();
     
     public abstract void moverse();
 

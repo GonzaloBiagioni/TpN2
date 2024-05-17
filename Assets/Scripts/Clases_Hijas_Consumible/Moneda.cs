@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class Moneda : Consumible
 {
+    public int value;
     protected override void OnTriggerEnter2D(Collider2D other)
     {
         base.OnTriggerEnter2D(other); 
     }
     protected override void RealizarAccion()
     {
-        //acá habría que sobreescribir y poner la lógica para llamar al metodo que modifica el contador de monedas 
+        MonedaContador.Instance.IncreaseCoin(value);
     }
 }

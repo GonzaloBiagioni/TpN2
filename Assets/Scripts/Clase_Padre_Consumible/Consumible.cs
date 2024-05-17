@@ -4,9 +4,23 @@ using UnityEngine;
 
 public abstract class Consumible : MonoBehaviour
 {
-    public virtual void Destruir()
+    // Método para detectar la colisión con el jugador
+    protected virtual void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Llamar a un método virtual que puede ser sobrescrito por las clases hijas
+            RealizarAccion();
+            Destruir();
+        }
     }
 
+    // Método que será sobrescrito por las clases hijas para definir su acción específica
+    protected abstract void RealizarAccion();
+    protected virtual void Destruir()
+    {
+        Destroy(gameObject);
+    }  
+
 }
+

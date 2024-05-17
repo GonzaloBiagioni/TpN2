@@ -5,6 +5,7 @@ using UnityEngine;
 public class FollowCamara : MonoBehaviour
 {
     public GameObject target;
+
     private float target_poseX;
     private float target_poseY;
 

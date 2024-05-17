@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class Moneda : Consumible
 {
-    protected override void OnCollisionEnter2D(Collision2D collision)
+    protected override void OnTriggerEnter2D(Collider2D other)
     {
-        base.OnCollisionEnter2D(collision); 
+        base.OnTriggerEnter2D(other); 
     }
     protected override void RealizarAccion()
     {

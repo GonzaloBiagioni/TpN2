@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Pocion_Vida : Consumible
 {
-    public override void Destruir()
+    protected override void OnCollisionEnter(Collision collision)
     {
-        base.Destruir();
+        base.OnCollisionEnter(collision);
+    }
+    protected override void RealizarAccion()
+    {
+        // acá hay que poner la lógica para que aumente la vida del personaje
     }
 }

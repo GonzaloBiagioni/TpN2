@@ -5,9 +5,9 @@ using UnityEngine;
 public abstract class Consumible : MonoBehaviour
 {
     // Método para detectar la colisión con el jugador
-    protected virtual void OnCollisionEnter(Collision collision)
+    protected virtual void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             // Llamar a un método virtual que puede ser sobrescrito por las clases hijas
             RealizarAccion();

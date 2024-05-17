@@ -10334,7 +10334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 322736734296853855, guid: 69c56780972490049b8207dc5e044e03, type: 3}
+    - {fileID: -184646424598551550, guid: 69c56780972490049b8207dc5e044e03, type: 3}
+    - {fileID: 8598343799252636998, guid: 69c56780972490049b8207dc5e044e03, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -63069,7 +63072,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1621497631}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1692995461}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: quitgame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1621497631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63612,6 +63627,50 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1692995460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1692995462}
+  - component: {fileID: 1692995461}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1692995461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692995460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba47c9c9bb3c1044db92f356ceb18c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1692995462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692995460}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.42618817, y: 2.3453515, z: -0.0899548}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1706044844
 GameObject:
   m_ObjectHideFlags: 0
@@ -87059,7 +87118,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2140625535}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1692995461}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: CambioEscena
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Escena2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2140625535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87106,3 +87177,4 @@ SceneRoots:
   - {fileID: 2001910897}
   - {fileID: 924405984}
   - {fileID: 911904790}
+  - {fileID: 1692995462}

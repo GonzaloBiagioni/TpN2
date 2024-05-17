@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void CambioEscena(string nombre)
+    public void CambioEscena()
     {
         // Reiniciar el juego
         Time.timeScale = 1f;

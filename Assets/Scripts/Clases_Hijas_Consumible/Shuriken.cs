@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Shuriken : Consumible
 {
-    protected override void OnCollisionEnter(Collision collision)
+    protected override void OnCollisionEnter2D(Collision2D collision)
     {
-        base.OnCollisionEnter(collision);
+        base.OnCollisionEnter2D(collision);
     }
     protected override void RealizarAccion()
     {

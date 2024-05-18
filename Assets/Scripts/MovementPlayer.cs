@@ -20,6 +20,10 @@ public class MovementPlayer : MonoBehaviour
         float moveVertical = Input.GetAxisRaw("Vertical");
         movement = new Vector2(moveHorizontal, moveVertical).normalized;
     }
+    void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
 }
 /*
  *     [Header("Bala Player")]

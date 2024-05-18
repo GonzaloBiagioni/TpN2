@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2087221610857869168}
   - component: {fileID: 2686247097952616315}
-  - component: {fileID: 6424555802759631270}
+  - component: {fileID: -363831647186641865}
   m_Layer: 0
   m_Name: LifePot
   m_TagString: Untagged
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6424555802759631270
+--- !u!61 &-363831647186641865
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,5 +128,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09, y: 0.11}
+  m_Size: {x: 0.1875, y: 0.22916667}
   m_EdgeRadius: 0

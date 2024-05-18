@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8946441439853757722}
   - component: {fileID: 5651283881544253188}
-  - component: {fileID: 1380128887678779168}
+  - component: {fileID: 2064817496980578954}
   m_Layer: 0
   m_Name: WaterPot
   m_TagString: Untagged
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1380128887678779168
+--- !u!61 &2064817496980578954
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,5 +128,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09, y: 0.11}
+  m_Size: {x: 0.1875, y: 0.22916667}
   m_EdgeRadius: 0

@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,9 +134,9 @@ TextureImporter:
       name: Coin2_1
       rect:
         serializedVersion: 2
-        x: 22
+        x: 10
         y: 0
-        width: 5
+        width: 10
         height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -155,9 +155,9 @@ TextureImporter:
       name: Coin2_2
       rect:
         serializedVersion: 2
-        x: 30
+        x: 20
         y: 0
-        width: 9
+        width: 10
         height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -168,6 +168,27 @@ TextureImporter:
       bones: []
       spriteID: 38cf9172971807f43beca2e3b28db989
       internalID: -415846353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin2_3
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f6f09d5498c4d4fa93fe1ede8e6352
+      internalID: -1154663880
       vertices: []
       indices: 
       edges: []
@@ -186,6 +207,7 @@ TextureImporter:
       Coin2_0: -1857215826
       Coin2_1: 1853666495
       Coin2_2: -415846353
+      Coin2_3: -1154663880
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -22,4 +22,10 @@ public class CanvasManager : MonoBehaviour
         hp -= 1;
         canvas.DesactivarHP(hp);
     }
+    public void RecuperarHP()
+    {
+        canvas.ActivarHP(hp);
+        hp += 1;        
+    }
+
 }

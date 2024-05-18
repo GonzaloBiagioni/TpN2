@@ -2,28 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CanvasHP : MonoBehaviour
+public class CanvasHP: MonoBehaviour
 {
- //   public Slider slider;
+    public GameObject[] hp;
 
-    void Start()
+    public void DesactivarHP(int indice)
     {
-        //slider = GetComponent<Slider>();
+        hp[indice].SetActive(false);
     }
-
-    public void cambiarVidaMaxima(float vidaMaxima)
-    {
-     //   slider.maxValue = vidaMaxima;
-    }
-
-    public void cambiarVidaActual(float cantidadVida)
-    {
-//        slider.value = cantidadVida;
-    }
-
-    public void inicializarBarraDeVida(float cantidadVida)
-    {
-        cambiarVidaMaxima(cantidadVida);
-        cambiarVidaActual(cantidadVida);
+    public void ActivarHP(int indice)
+    {        
+        hp[indice].SetActive(true);        
     }
 }

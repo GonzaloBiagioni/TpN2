@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CanvasManager : MonoBehaviour
 {
@@ -20,12 +21,24 @@ public class CanvasManager : MonoBehaviour
     public void PerderHP()
     {
         hp -= 1;
+
+        if (hp == 0)
+        {
+            SceneManager.LoadScene(4);
+        }
+
         canvas.DesactivarHP(hp);
     }
-    public void RecuperarHP()
+    public bool RecuperarHP()
     {
+        if(hp == 3)
+        {
+            return false;
+        }
+
         canvas.ActivarHP(hp);
-        hp += 1;        
+        hp += 1;       
+        return true;
     }
 
 }

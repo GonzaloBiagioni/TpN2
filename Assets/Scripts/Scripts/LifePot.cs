@@ -8,8 +8,12 @@ public class LifePot : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            CanvasManager.Instance.RecuperarHP();
+            bool Vidarecuperada = CanvasManager.Instance.RecuperarHP();
+
+            if (Vidarecuperada) 
+            { 
             Destroy(this.gameObject);
+            }
         }
     }
 }

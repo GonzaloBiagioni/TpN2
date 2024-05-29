@@ -14,7 +14,6 @@ public class Enemigo : Personaje
     public float limiteInferior = -5f; // Límite inferior de movimiento
 
     public float velocidadPerseguidor = 5f; // Velocidad de movimiento de perseguidor
-    public Transform jugador; // Referencia al transform del jugador
     private float distance;
     public GameObject player;
     public override void Atacar()
@@ -41,13 +40,13 @@ public class Enemigo : Personaje
 
 
     // Método para moverse verticalmente de forma infinita
-    protected void MoverVertical()
+    protected virtual void MoverVertical()
     {
         StartCoroutine(MoverVerticalCoroutine());
     }
 
     // Corutina para el movimiento vertical infinito
-    protected IEnumerator MoverVerticalCoroutine()
+    protected virtual IEnumerator MoverVerticalCoroutine()
     {
         // Variable para controlar la dirección del movimiento
         bool moverArriba = true;
@@ -83,13 +82,13 @@ public class Enemigo : Personaje
 
 
     // Método para moverse como perseguidor
-    protected void MoverPerseguidor()
+    public void MoverPerseguidor()
     {
         StartCoroutine(MoverPerseguidorCoroutine());
     }
 
     // Corutina para el movimiento de perseguidor
-    protected IEnumerator MoverPerseguidorCoroutine()
+    public IEnumerator MoverPerseguidorCoroutine()
     {
         // Loop infinito para el movimiento de perseguidor
         while (true)

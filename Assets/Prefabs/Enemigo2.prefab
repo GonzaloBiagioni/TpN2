@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4498810222810054736}
   - component: {fileID: 6013024358151695796}
   - component: {fileID: -4144334865725342024}
+  - component: {fileID: -3404333738543651462}
   m_Layer: 0
   m_Name: Enemigo2
   m_TagString: Untagged
@@ -130,3 +131,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.15}
   m_EdgeRadius: 0
+--- !u!114 &-3404333738543651462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4505552381183025648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a16b0dd03ac6e439023c2f7f142b84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 1
+  "da\xF1o": 1
+  VelocidadMovimiento: 2
+  MovimientoVertical: 1
+  MovimientoPerseguidor: 0
+  velocidad: 2
+  limiteSuperior: 5
+  limiteInferior: -5
+  velocidadPerseguidor: 5
+  jugador: {fileID: 0}
+  player: {fileID: 0}

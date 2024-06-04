@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8169938562887092691}
   - component: {fileID: 4825132565476498592}
-  - component: {fileID: -2696409505410701133}
+  - component: {fileID: 1493511629020656563}
   m_Layer: 0
   m_Name: Aldeano1
   m_TagString: Untagged
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &-2696409505410701133
+--- !u!61 &1493511629020656563
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,5 +128,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.15}
+  m_Size: {x: 0.3125, y: 0.3125}
   m_EdgeRadius: 0

@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4498810222810054736}
   - component: {fileID: 6013024358151695796}
-  - component: {fileID: -4144334865725342024}
-  - component: {fileID: -3404333738543651462}
+
+  - component: {fileID: 968255446972946789}
+
   m_Layer: 0
   m_Name: Enemigo2
   m_TagString: Untagged
@@ -86,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &-4144334865725342024
+--- !u!61 &968255446972946789
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,7 +130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.15}
+  m_Size: {x: 0.33333334, y: 0.3125}
   m_EdgeRadius: 0
 --- !u!114 &-3404333738543651462
 MonoBehaviour:

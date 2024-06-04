@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4156023815270952978}
   - component: {fileID: 6999317122749978709}
-  - component: {fileID: -7781419020926508515}
+  - component: {fileID: -1110521305336310471}
   m_Layer: 0
   m_Name: Jefe
   m_TagString: Untagged
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &-7781419020926508515
+--- !u!61 &-1110521305336310471
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,7 +114,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -128,5 +128,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.38, y: 0.43}
+  m_Size: {x: 0.7916667, y: 0.8958333}
   m_EdgeRadius: 0

@@ -93,8 +93,8 @@ public class EnemyMovement : MonoBehaviour
 
     void DestruirEnemigo()
     {
-        // Destruir el enemigo después de un tiempo
-        Destroy(gameObject, tiempoDestruccion);
+        // Destruir el enemigo 
+        Destroy(gameObject);
     }
 }
 

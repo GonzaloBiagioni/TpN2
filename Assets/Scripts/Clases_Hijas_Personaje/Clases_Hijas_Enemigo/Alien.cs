@@ -4,29 +4,23 @@ using UnityEngine;
 
 public class Alien : Enemigo
 {
+    private void Start()
+    {
+        moverse();
+    }
+    
+    public override void moverse()
+    {
+        base.moverse(); 
+    }
+     
+    public override void RecibirDaño()
+    {
+        base.RecibirDaño();
+    }
     public override void Atacar()
     {
         base.Atacar(); // esto se usa si el ataque es igual al base
         //acá se agregaría la lógica para que haga su ataque especial
-    }
-
-    public override void moverse()
-    {
-        base.moverse(); // esto se usa si el movimiento es igual al base
-        //acá se agregaría la lógica para que haga un movimiento especial de ser necesario
-    }
-    protected override void MoverVertical()
-    {
-        base.MoverVertical();
-    }
-
-    protected override MoverVerticalCoroutine()
-    {
-        base.MoverVerticalCoroutine();
-    }
-
-    public override void RecibirDaño()
-    {
-        base.RecibirDaño();
     }
 }

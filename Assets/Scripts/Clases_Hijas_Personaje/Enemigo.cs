@@ -15,6 +15,7 @@ public class Enemigo : Personaje
 
     public float velocidadPerseguidor = 5f; // Velocidad de movimiento de perseguidor
     private float distance;
+    public float distanciaPersecucion;
     public GameObject player;
     public override void Atacar()
     {
@@ -93,23 +94,18 @@ public class Enemigo : Personaje
         // Loop infinito para el movimiento de perseguidor
         while (true)
         {
+            // Calcula la distancia al jugador
             distance = Vector2.Distance(transform.position, player.transform.position);
 
-            while (distance < 10)
+            if (distance < distanciaPersecucion)
             {
                 // Calcula la dirección hacia el jugador y mueve el enemigo hacia él
-                Vector2 direction = player.transform.position - transform.position;
+                Vector2 direction = (player.transform.position - transform.position).normalized;
                 transform.position = Vector2.MoveTowards(transform.position, player.transform.position, velocidadPerseguidor * Time.deltaTime);
-
-                ;
-
-                // Actualiza la distancia al jugador
-                distance = Vector2.Distance(transform.position, player.transform.position);
             }
+
             // Espera un frame antes de continuar
             yield return null;
         }
     }
-
-
 }

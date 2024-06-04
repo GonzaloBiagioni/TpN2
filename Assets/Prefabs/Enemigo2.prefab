@@ -149,8 +149,7 @@ MonoBehaviour:
   MovimientoVertical: 1
   MovimientoPerseguidor: 0
   velocidad: 2
-  limiteSuperior: 5
-  limiteInferior: -5
+  limiteSuperior: 3
+  limiteInferior: -3
   velocidadPerseguidor: 5
-  jugador: {fileID: 0}
   player: {fileID: 0}

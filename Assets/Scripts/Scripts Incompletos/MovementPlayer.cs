@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MovementPlayer : MonoBehaviour
+public class MovementPlayer : MonoBehaviour, iDamageable
+
 {
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
@@ -20,10 +21,21 @@ public class MovementPlayer : MonoBehaviour
         float moveVertical = Input.GetAxisRaw("Vertical");
         movement = new Vector2(moveHorizontal, moveVertical).normalized;
     }
+
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
+    // Implementación de IDamageable
+    public void TakeDamage()
+    {
+        CanvasManager.Instance.PerderHP();
+    }
+}
+public interface iDamageable
+{
+    void TakeDamage();
 }
 /*
  *     [Header("Bala Player")]

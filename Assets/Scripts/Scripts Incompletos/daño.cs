@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class daño : MonoBehaviour
+public class Daño : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        iDamageable damageable = other.gameObject.GetComponent<iDamageable>();
+        if (damageable != null)
         {
-            CanvasManager.Instance.PerderHP();
+            damageable.TakeDamage();
         }
     }
 }

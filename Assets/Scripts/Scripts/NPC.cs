@@ -14,18 +14,18 @@ public class NPC : MonoBehaviour
         // Lógica para que se mueva.
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.collider.CompareTag("Player"))
         {
             Debug.Log("Jugador entró en la zona del NPC");
             Interactuar();
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.collider.CompareTag("Player"))
         {
             Debug.Log("Jugador salió de la zona del NPC");
             DejarDeInteractuar();

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7199570757015574956}
   - component: {fileID: 3336047517730972283}
   - component: {fileID: 6782194767231327618}
+  - component: {fileID: 6681271458679318340}
   m_Layer: 0
   m_Name: Aldeano4
   m_TagString: Untagged
@@ -130,3 +131,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14814815, y: 0.14814815}
   m_EdgeRadius: 0
+--- !u!114 &6681271458679318340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862957414420252053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd2e6003a5111b4c9fc4fabf18787b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Velocidad: 0

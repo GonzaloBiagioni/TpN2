@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4498810222810054736}
   - component: {fileID: 6013024358151695796}
-
   - component: {fileID: 968255446972946789}
-
+  - component: {fileID: -3404333738543651462}
   m_Layer: 0
   m_Name: Enemigo2
   m_TagString: Untagged
@@ -154,4 +153,4 @@ MonoBehaviour:
   limiteInferior: -3
   velocidadPerseguidor: 3
   distanciaPersecucion: 0
-  player: {fileID: 0}
+  player: {fileID: 7450235708675944644, guid: 69c56780972490049b8207dc5e044e03, type: 3}

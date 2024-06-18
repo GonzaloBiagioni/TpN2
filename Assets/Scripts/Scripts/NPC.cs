@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
-    public int Velocidad;
     public delegate void NPCInteractEvent();
     public static event NPCInteractEvent onNPCInteract;
     public static event NPCInteractEvent onNPCExit;
-
-    public void moverse()
-    {
-        // Lógica para que se mueva.
-    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

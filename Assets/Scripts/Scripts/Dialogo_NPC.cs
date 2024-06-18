@@ -20,7 +20,7 @@ public class Dialogo_NPC : MonoBehaviour
     private void ActivarDialogo()
     {
         dialogueText.gameObject.SetActive(true);
-        dialogueText.text = "¡Hola, aventurero! ¿Cómo puedo ayudarte hoy?";
+        dialogueText.text = "Te vendo un pollito";
     }
 
     private void DesactivarDialogo()

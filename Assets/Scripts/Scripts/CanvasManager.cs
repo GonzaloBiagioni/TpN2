@@ -8,7 +8,6 @@ public class CanvasManager : MonoBehaviour
     public static CanvasManager Instance { get; private set; }
 
     private int hp = 3;
-
     public CanvasHP canvas;
 
     private void Awake()
@@ -18,6 +17,7 @@ public class CanvasManager : MonoBehaviour
             Instance = this;
         }
     }
+
     public void PerderHP()
     {
         hp -= 1;
@@ -29,16 +29,17 @@ public class CanvasManager : MonoBehaviour
 
         canvas.DesactivarHP(hp);
     }
+
     public bool RecuperarHP()
     {
-        if(hp == 3)
+        if (hp == 3)
         {
-            return false;
+            return false; 
         }
 
-        canvas.ActivarHP(hp);
-        hp += 1;       
+        hp += 1;
+        canvas.ActivarHP(hp - 1); 
+
         return true;
     }
-
 }

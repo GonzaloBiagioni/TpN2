@@ -6,13 +6,18 @@ public class LifePot : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            bool Vidarecuperada = CanvasManager.Instance.RecuperarHP();
+            CanvasManager canvasManager = CanvasManager.Instance;
 
-            if (Vidarecuperada) 
-            { 
-            Destroy(this.gameObject);
+            if (canvasManager != null)
+            {
+                bool vidaRecuperada = canvasManager.RecuperarHP();
+
+                if (vidaRecuperada)
+                {
+                    Destroy(gameObject); 
+                }
             }
         }
     }

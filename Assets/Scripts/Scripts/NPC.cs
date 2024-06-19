@@ -28,6 +28,7 @@ public class NPC : MonoBehaviour
 
     private void Interactuar()
     {
+        EventManager.Instance.NPCInteracted();
         onNPCInteract?.Invoke();
     }
 

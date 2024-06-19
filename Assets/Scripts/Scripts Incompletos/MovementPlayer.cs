@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MovementPlayer : MonoBehaviour, iDamageable
+public class MovementPlayer : MonoBehaviour, iDamageable , Ihealable
 
 {
     public float moveSpeed = 5f;
@@ -40,13 +40,19 @@ public class MovementPlayer : MonoBehaviour, iDamageable
             coleccionable.Recoger();
         }
     }
-}
+    public bool RecuperarHP()
+    {
+        return true;
+    }
 
+}
 
 public interface iDamageable
 {
     void TakeDamage();
 }
+
+
 /*
  *     [Header("Bala Player")]
     public GameObject bala ;

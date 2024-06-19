@@ -9,12 +9,22 @@ public class TriggerCambioEscena : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.Instance.OnNPCInteract += EnableSceneChange;
+        if (EventManager.Instance != null)
+        {
+            EventManager.Instance.OnNPCInteract += EnableSceneChange;
+        }
+        else
+        {
+            Debug.LogWarning("EventManager.Instance is null in TriggerCambioEscena.OnEnable()");
+        }
     }
 
     private void OnDisable()
     {
-        EventManager.Instance.OnNPCInteract -= EnableSceneChange;
+        if (EventManager.Instance != null)
+        {
+            EventManager.Instance.OnNPCInteract -= EnableSceneChange;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

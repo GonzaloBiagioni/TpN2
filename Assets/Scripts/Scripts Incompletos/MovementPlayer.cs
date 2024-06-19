@@ -32,7 +32,17 @@ public class MovementPlayer : MonoBehaviour, iDamageable
     {
         CanvasManager.Instance.PerderHP();
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        IColeccionable coleccionable = other.GetComponent<IColeccionable>();
+        if (coleccionable != null)
+        {
+            coleccionable.Recoger();
+        }
+    }
 }
+
+
 public interface iDamageable
 {
     void TakeDamage();

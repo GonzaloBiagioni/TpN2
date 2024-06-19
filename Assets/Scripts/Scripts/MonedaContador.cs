@@ -6,24 +6,23 @@ using UnityEngine.UI;
 
 public class MonedaContador : MonoBehaviour
 {
-    public static MonedaContador Instance;
-    public Text coinText;
-    public int currentCoin = 0;
+    public Text contadorTexto;
+    private int contadorMonedas;
+    public int valorMoneda = 5;
 
-    void Awake()
+    private void OnEnable()
     {
-        Instance = this;
+        Moneda.onMonedaRecogida += ActualizarContador;
     }
 
-    void Start()
+    private void OnDisable()
     {
-        coinText.text = "Monedas: " + currentCoin.ToString();
+        Moneda.onMonedaRecogida -= ActualizarContador;
     }
 
-    public void IncreaseCoin(int v)
+    private void ActualizarContador()
     {
-        currentCoin += v;
-        coinText.text = "Monedas: " + currentCoin.ToString();
+        contadorMonedas = contadorMonedas+ valorMoneda;
+        contadorTexto.text = "Monedas: " + contadorMonedas;
     }
-
 }

@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Moneda : Consumible
+public class Moneda : MonoBehaviour, IColeccionable
 {
-    public int value;
-    protected override void OnTriggerEnter2D(Collider2D other)
+    public delegate void MonedaRecogidaEventHandler();
+    public static event MonedaRecogidaEventHandler onMonedaRecogida;
+
+    public void Recoger()
     {
-        base.OnTriggerEnter2D(other); 
-    }
-    protected override void RealizarAccion()
-    {
-        MonedaContador.Instance.IncreaseCoin(value);
+        // Destruye la moneda y lanza el evento
+        onMonedaRecogida?.Invoke();
+        Destroy(gameObject);
     }
 }

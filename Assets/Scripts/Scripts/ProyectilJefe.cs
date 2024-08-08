@@ -10,7 +10,7 @@ public class ProyectilJefe : MonoBehaviour
 
     private void Start()
     {
-        // Encuentra el objeto con el tag "Player" y obtiene su transform
+        // Encuentra el objeto con el tag "Player" y obtiene su transfor
         GameObject jugador = GameObject.FindGameObjectWithTag("Player");
         if (jugador != null)
         {

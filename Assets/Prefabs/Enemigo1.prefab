@@ -12,7 +12,11 @@ GameObject:
   - component: {fileID: 8133109029755116146}
   - component: {fileID: 8432264275704396266}
   - component: {fileID: 2172334269745663851}
+<<<<<<< HEAD
+  - component: {fileID: 373759301454335963}
+=======
   - component: {fileID: -5322602816095255814}
+>>>>>>> main
   m_Layer: 0
   m_Name: Enemigo1
   m_TagString: Enemy
@@ -144,7 +148,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4c606d7a5551c4caeb8ddecf5e09b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+--- !u!114 &373759301454335963
+=======
 --- !u!114 &-5322602816095255814
+>>>>>>> main
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -156,17 +164,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4a7c09f655110040a361aa01b8b9dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  vida: 1
+  "da\xF1o": 0
+  VelocidadMovimiento: 0
+=======
   vida: 0
   "da\xF1o": 0
   VelocidadMovimiento: 3
+>>>>>>> main
   proyectilPrefab: {fileID: 0}
   puntoDeDisparo: {fileID: 0}
   MovimientoVertical: 0
   MovimientoPerseguidor: 1
+<<<<<<< HEAD
+  velocidad: 2
+  limiteSuperior: 5
+  limiteInferior: -5
+  velocidadPerseguidor: 5
+  distanciaPersecucion: 10
+  player: {fileID: 7450235708675944644, guid: 69c56780972490049b8207dc5e044e03, type: 3}
+=======
   velocidad: 3
   limiteSuperior: 5
   limiteInferior: -5
   velocidadPerseguidor: 3
   distanciaPersecucion: 25
   player: {fileID: 0}
+>>>>>>> main
   tiempoEntreDisparos: 2

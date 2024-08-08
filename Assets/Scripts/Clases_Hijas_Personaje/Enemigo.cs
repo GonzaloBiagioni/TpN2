@@ -23,6 +23,7 @@ public class Enemigo : Personaje
     public float tiempoEntreDisparos = 2f; // Intervalo de tiempo entre disparos en segundos
     private bool disparando = false;
 
+
     public override void Atacar()
     {
         if (!disparando)
@@ -63,7 +64,17 @@ public class Enemigo : Personaje
 
     public override void RecibirDaño()
     {
-        // Lógica para recibir daño
+        vida -= 1; 
+
+        if (vida <= 0)
+        {
+            Morir();
+        }
+    }
+
+    private void Morir()
+    {
+        Destroy(gameObject); // Destruye el enemigo cuando su vida es 0 o menos
     }
 
     // Método para moverse verticalmente de forma infinita

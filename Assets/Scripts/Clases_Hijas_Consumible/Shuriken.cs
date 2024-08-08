@@ -35,16 +35,18 @@ public class Shuriken : Consumible
         // Colisión con el enemigo
         if (other.CompareTag("Enemy"))
         {
-            // Obtener el componente de salud del enemigo
-            Enemyhealth enemyHealth = other.GetComponent<Enemyhealth>();
-            if (enemyHealth != null)
+            // Verifica si el objeto con el que colisiona es un enemigo (o un objeto que hereda de Enemigo)
+            Enemigo enemigo = other.GetComponent<Enemigo>();
+            if (enemigo != null)
             {
-                enemyHealth.TakeDamage(1);
+                Debug.Log("enemigo");
+                enemigo.RecibirDaño(); // Llama al método RecibirDaño del enemigo o de sus hijos
             }
 
-            // Destruir el shuriken tras impactar con el enemigo
-            Destruir();
+            
         }
+        // Destruir el shuriken tras impactar con el enemigo
+        Destruir();
     }
     protected override void RealizarAccion()
     {

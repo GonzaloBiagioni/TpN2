@@ -104,6 +104,7 @@ MonoBehaviour:
   VelocidadMovimiento: 0
   proyectilPrefab: {fileID: 0}
   puntoDeDisparo: {fileID: 0}
+  coinPrefab: {fileID: 8159738251505639978, guid: 0a576cf1627e89e4cbf69ba2e7eb70cb, type: 3}
   MovimientoVertical: 0
   MovimientoPerseguidor: 1
   velocidad: 0

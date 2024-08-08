@@ -149,6 +149,7 @@ MonoBehaviour:
   VelocidadMovimiento: 2
   proyectilPrefab: {fileID: 511271424855183578, guid: 7d7acf8b1a5ffd94cb061bc871097eda, type: 3}
   puntoDeDisparo: {fileID: 5148471409728186626}
+  coinPrefab: {fileID: 8159738251505639978, guid: 0a576cf1627e89e4cbf69ba2e7eb70cb, type: 3}
   MovimientoVertical: 1
   MovimientoPerseguidor: 0
   velocidad: 2
@@ -156,8 +157,8 @@ MonoBehaviour:
   limiteInferior: -3
   velocidadPerseguidor: 3
   distanciaPersecucion: 0
-  player: {fileID: 7450235708675944644, guid: 69c56780972490049b8207dc5e044e03, type: 3}
   tiempoEntreDisparos: 2
+  player: {fileID: 7450235708675944644, guid: 69c56780972490049b8207dc5e044e03, type: 3}
 --- !u!1 &7695680444572481535
 GameObject:
   m_ObjectHideFlags: 0

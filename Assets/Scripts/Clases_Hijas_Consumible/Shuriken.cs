@@ -39,13 +39,15 @@ public class Shuriken : Consumible
             Enemigo enemigo = other.GetComponent<Enemigo>();
             if (enemigo != null)
             {
-                Debug.Log("enemigo");
                 enemigo.RecibirDaño(); // Llama al método RecibirDaño del enemigo o de sus hijos
-            }
-
-            
+                Destruir();
+            }           
         }
-        // Destruir el shuriken tras impactar con el enemigo
+        if (other.CompareTag("Potion") || other.CompareTag("SpeedPotion") || other.CompareTag("Coin"))
+        {
+            // No destruir el shuriken si colisiona con pociones o monedas
+            return;
+        }
         Destruir();
     }
     protected override void RealizarAccion()

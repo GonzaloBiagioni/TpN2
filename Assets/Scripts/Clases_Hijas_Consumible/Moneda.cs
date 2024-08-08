@@ -14,4 +14,11 @@ public class Moneda : MonoBehaviour, IColeccionable
         onMonedaRecogida?.Invoke();
         Destroy(gameObject);
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Recoger();
+        }
+    }
 }

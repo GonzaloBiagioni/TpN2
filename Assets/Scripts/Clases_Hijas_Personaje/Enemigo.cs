@@ -7,7 +7,7 @@ public class Enemigo : Personaje
 {
     public GameObject proyectilPrefab; // Asignar en el inspector el prefab del proyectil
     public Transform puntoDeDisparo; // Asignar en el inspector el punto de disparo
-
+    public GameObject coinPrefab;
     public bool MovimientoVertical = false;
     public bool MovimientoPerseguidor = false;
 
@@ -79,7 +79,8 @@ public class Enemigo : Personaje
 
     private void Morir()
     {
-        Destroy(gameObject); // Destruye el enemigo cuando su vida es 0 o menos
+        Destroy(gameObject); 
+        Instantiate(coinPrefab, transform.position, Quaternion.identity);
     }
 
     // Método para moverse verticalmente de forma infinita

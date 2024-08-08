@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07575f2e16e10f04f8756119e2713533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 0
+  vida: 25
   "da\xF1o": 0
   VelocidadMovimiento: 0
   proyectilPrefab: {fileID: 1859209376845111495, guid: 7279900316a607c498c625a7648656bc, type: 3}
@@ -187,5 +187,5 @@ MonoBehaviour:
   limiteInferior: -5
   velocidadPerseguidor: 5
   distanciaPersecucion: 0
-  player: {fileID: 0}
   tiempoEntreDisparos: 2
+  player: {fileID: 0}

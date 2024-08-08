@@ -8,7 +8,7 @@ public class MonedaContador : MonoBehaviour
 {
     public Text contadorTexto;
     private int contadorMonedas;
-    public int valorMoneda = 5;
+    public int valorMoneda = 10;
 
     private void OnEnable()
     {

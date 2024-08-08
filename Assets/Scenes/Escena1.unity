@@ -8783,7 +8783,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7450235708675944644, guid: 69c56780972490049b8207dc5e044e03, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 917708491}
+      addedObject: {fileID: 917708496}
   m_SourcePrefab: {fileID: 100100000, guid: 69c56780972490049b8207dc5e044e03, type: 3}
 --- !u!1001 &615815434
 PrefabInstance:
@@ -12443,7 +12443,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7450235708675944644, guid: 69c56780972490049b8207dc5e044e03, type: 3}
   m_PrefabInstance: {fileID: 613742791}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &917708491
+--- !u!114 &917708496
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12452,10 +12452,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 917708485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f8ad32ef1e693478507503ff1a964b, type: 3}
+  m_Script: {fileID: 11500000, guid: 41a8738cab75a884c8bedd2e37a429a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6
+  vida: 0
+  "da\xF1o": 0
+  VelocidadMovimiento: 0
+  moveSpeed: 5
 --- !u!1001 &924991796
 PrefabInstance:
   m_ObjectHideFlags: 0

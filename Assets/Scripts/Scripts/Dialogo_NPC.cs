@@ -20,7 +20,7 @@ public class Dialogo_NPC : MonoBehaviour
     private void ActivarDialogo()
     {
         dialogueText.gameObject.SetActive(true);
-        dialogueText.text = "Te vendo un pollito";
+        dialogueText.text = "Porfavor salvanos de la llama infernal";
     }
 
     private void DesactivarDialogo()

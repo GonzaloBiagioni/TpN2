@@ -12155,7 +12155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3da9b50e7895624fb274538c2d5b794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 1
 --- !u!1 &882808291
 GameObject:
   m_ObjectHideFlags: 0
@@ -18288,7 +18287,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3da9b50e7895624fb274538c2d5b794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 1
 --- !u!114 &1327755483
 MonoBehaviour:
   m_ObjectHideFlags: 0

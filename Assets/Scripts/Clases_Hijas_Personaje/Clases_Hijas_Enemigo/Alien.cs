@@ -7,6 +7,7 @@ public class Alien : Enemigo
     private void Start()
     {
         moverse();
+        Atacar();
     }
     
     public override void moverse()
@@ -20,7 +21,6 @@ public class Alien : Enemigo
     }
     public override void Atacar()
     {
-        base.Atacar(); // esto se usa si el ataque es igual al base
-        //acá se agregaría la lógica para que haga su ataque especial
+        base.Atacar(); 
     }
 }

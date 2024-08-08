@@ -31,7 +31,8 @@ Transform:
   m_LocalPosition: {x: -22.675856, y: -2.8253496, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 3}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5148471409728186626}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6013024358151695796
@@ -146,6 +147,8 @@ MonoBehaviour:
   vida: 1
   "da\xF1o": 1
   VelocidadMovimiento: 2
+  proyectilPrefab: {fileID: 1368004258531708215, guid: 3f7f2bbcca9362a4cbc4ae648133f527, type: 3}
+  puntoDeDisparo: {fileID: 5148471409728186626}
   MovimientoVertical: 1
   MovimientoPerseguidor: 0
   velocidad: 2
@@ -154,3 +157,35 @@ MonoBehaviour:
   velocidadPerseguidor: 3
   distanciaPersecucion: 0
   player: {fileID: 7450235708675944644, guid: 69c56780972490049b8207dc5e044e03, type: 3}
+  tiempoEntreDisparos: 2
+--- !u!1 &7695680444572481535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5148471409728186626}
+  m_Layer: 0
+  m_Name: punto de disparo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5148471409728186626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7695680444572481535}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.172, y: 0, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.33333334}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4498810222810054736}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

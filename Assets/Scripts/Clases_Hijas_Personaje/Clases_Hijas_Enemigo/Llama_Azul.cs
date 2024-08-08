@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class Llama_Azul : Enemigo
 {
-    public override void Atacar()
-    {
-        base.Atacar(); // esto se usa si el ataque es igual al base
-        //acá se agregaría la lógica para que haga su ataque especial
-    }
-
     public override void moverse()
     {
         base.moverse(); // esto se usa si el movimiento es igual al base

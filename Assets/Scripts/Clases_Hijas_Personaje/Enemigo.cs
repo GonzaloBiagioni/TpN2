@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class Enemigo : Personaje
 {
-    // Booleano para controlar el tipo de movimiento del enemigo
+    public GameObject proyectilPrefab; // Asignar en el inspector el prefab del proyectil
+    public Transform puntoDeDisparo; // Asignar en el inspector el punto de disparo
+
     public bool MovimientoVertical = false;
     public bool MovimientoPerseguidor = false;
 
@@ -17,9 +19,34 @@ public class Enemigo : Personaje
     private float distance;
     public float distanciaPersecucion;
     public GameObject player;
+
+    public float tiempoEntreDisparos = 2f; // Intervalo de tiempo entre disparos en segundos
+    private bool disparando = false;
+
     public override void Atacar()
     {
-        //lógica para que ataque
+        if (!disparando)
+        {
+            disparando = true;
+            StartCoroutine(DispararAutomaticamente());
+        }
+    }
+
+    protected virtual IEnumerator DispararAutomaticamente()
+    {
+        while (true)
+        {
+            DispararProyectil();
+            yield return new WaitForSeconds(tiempoEntreDisparos);
+        }
+    }
+
+    protected virtual void DispararProyectil()
+    {
+        if (proyectilPrefab != null && puntoDeDisparo != null)
+        {
+            Instantiate(proyectilPrefab, puntoDeDisparo.position, transform.rotation);
+        }
     }
 
     public override void moverse()
@@ -36,9 +63,8 @@ public class Enemigo : Personaje
 
     public override void RecibirDaño()
     {
-        //lógica para recibir daño
+        // Lógica para recibir daño
     }
-
 
     // Método para moverse verticalmente de forma infinita
     protected virtual void MoverVertical()
@@ -49,24 +75,19 @@ public class Enemigo : Personaje
     // Corutina para el movimiento vertical infinito
     protected virtual IEnumerator MoverVerticalCoroutine()
     {
-        // Variable para controlar la dirección del movimiento
         bool moverArriba = true;
 
-        // Loop infinito para moverse verticalmente
         while (true)
         {
-            // Si el enemigo alcanza el límite superior, cambia de dirección
             if (transform.position.y >= limiteSuperior)
             {
                 moverArriba = false;
             }
-            // Si el enemigo alcanza el límite inferior, cambia de dirección
             else if (transform.position.y <= limiteInferior)
             {
                 moverArriba = true;
             }
 
-            // Mueve el enemigo hacia arriba o hacia abajo según la dirección
             if (moverArriba)
             {
                 transform.Translate(Vector3.up * velocidad * Time.deltaTime);
@@ -76,11 +97,9 @@ public class Enemigo : Personaje
                 transform.Translate(Vector3.down * velocidad * Time.deltaTime);
             }
 
-            // Espera un frame antes de continuar
             yield return null;
         }
     }
-
 
     // Método para moverse como perseguidor
     public void MoverPerseguidor()
@@ -91,20 +110,16 @@ public class Enemigo : Personaje
     // Corutina para el movimiento de perseguidor
     public IEnumerator MoverPerseguidorCoroutine()
     {
-        // Loop infinito para el movimiento de perseguidor
         while (true)
         {
-            // Calcula la distancia al jugador
             distance = Vector2.Distance(transform.position, player.transform.position);
 
             if (distance < distanciaPersecucion)
             {
-                // Calcula la dirección hacia el jugador y mueve el enemigo hacia él
                 Vector2 direction = (player.transform.position - transform.position).normalized;
                 transform.position = Vector2.MoveTowards(transform.position, player.transform.position, velocidadPerseguidor * Time.deltaTime);
             }
 
-            // Espera un frame antes de continuar
             yield return null;
         }
     }

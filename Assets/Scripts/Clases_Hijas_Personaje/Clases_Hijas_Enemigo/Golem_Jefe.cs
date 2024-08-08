@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class Golem_Jefe : Enemigo
 {
+    private void Start()
+    {
+        Atacar();
+    }
     public override void Atacar()
     {
-        base.Atacar(); // esto se usa si el ataque es igual al base
-        //acá se agregaría la lógica para que haga su ataque especial
-    }
-
-    public override void moverse()
-    {
-        base.moverse(); // esto se usa si el movimiento es igual al base
-        //acá se agregaría la lógica para que haga un movimiento especial de ser necesario
+        base.Atacar(); 
     }
 
     public override void RecibirDaño()

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5693956926937160067
+--- !u!1 &1859209376845111495
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,71 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2630143698943416655}
+  - component: {fileID: 750269349682264313}
+  - component: {fileID: 7636182447806891290}
+  - component: {fileID: 2368130700957861313}
+  - component: {fileID: 363801629438657162}
+  - component: {fileID: 1120395030271032298}
   m_Layer: 0
-  m_Name: PuntoDisparo
+  m_Name: ProyectilBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2630143698943416655
+--- !u!4 &750269349682264313
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5693956926937160067}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -0.427, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4156023815270952978}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8109961120984307632
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4156023815270952978}
-  - component: {fileID: 6999317122749978709}
-  - component: {fileID: -1110521305336310471}
-  - component: {fileID: -3381582412579682338}
-  m_Layer: 0
-  m_Name: Jefe
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4156023815270952978
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8109961120984307632}
+  m_GameObject: {fileID: 1859209376845111495}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.33, y: 0.5330324, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalPosition: {x: 2.224547, y: -2.718486, z: 0}
+  m_LocalScale: {x: 7.5873, y: 7.5873, z: 7.5873}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2630143698943416655}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6999317122749978709
+--- !u!212 &7636182447806891290
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8109961120984307632}
+  m_GameObject: {fileID: 1859209376845111495}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -107,24 +76,45 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 568826195, guid: 3150d0fbf5123ea49a00d66df749a606, type: 3}
+  m_Sprite: {fileID: 1603998727, guid: be320abbb7356db489877208d3e10712, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.38, y: 0.43}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &-1110521305336310471
+--- !u!95 &2368130700957861313
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859209376845111495}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8c6ea16762a2b2846973be9b8751ee79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &363801629438657162
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8109961120984307632}
+  m_GameObject: {fileID: 1859209376845111495}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -147,45 +137,33 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0007072389, y: 0.000000029802322}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7916667, y: 0.8958333}
-    newSize: {x: 0.38, y: 0.43}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7916667, y: 0.8958333}
+  m_Size: {x: 0.14161167, y: 0.1416116}
   m_EdgeRadius: 0
---- !u!114 &-3381582412579682338
+--- !u!114 &1120395030271032298
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8109961120984307632}
+  m_GameObject: {fileID: 1859209376845111495}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07575f2e16e10f04f8756119e2713533, type: 3}
+  m_Script: {fileID: 11500000, guid: b5489e96b67aa3147ba72d9f4350dac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 0
-  "da\xF1o": 0
-  VelocidadMovimiento: 0
-  proyectilPrefab: {fileID: 1859209376845111495, guid: 7279900316a607c498c625a7648656bc, type: 3}
-  puntoDeDisparo: {fileID: 2630143698943416655}
-  MovimientoVertical: 0
-  MovimientoPerseguidor: 0
-  velocidad: 2
-  limiteSuperior: 5
-  limiteInferior: -5
-  velocidadPerseguidor: 5
-  distanciaPersecucion: 0
-  player: {fileID: 0}
-  tiempoEntreDisparos: 2
+  velocidad: 3
+  tiempoVida: 3

@@ -21,7 +21,7 @@ public class NPC : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
-            Debug.Log("Jugador salió de la zona del NPC");
+            Debug.Log("Jugador salio de la zona del NPC");
             DejarDeInteractuar();
         }
     }

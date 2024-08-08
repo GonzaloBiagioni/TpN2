@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class Pocion_Velocidad : Consumible
 {
-    protected override void OnTriggerEnter2D(Collider2D other)
-    {
-        base.OnTriggerEnter2D(other);
-    }
+    public float incrementoDeVelocidad = 2f; // Incremento de velocidad
+    public float duracionEfecto = 2f; // Duración del efecto en segundos
     protected override void RealizarAccion()
     {
-        //acá hay que poner la lógica para que aumente la velocidad del personaje
+        Player jugador = FindObjectOfType<Player>();
+        if (jugador != null)
+        {
+            // Incrementar la velocidad del jugador
+            jugador.IncrementarVelocidad(incrementoDeVelocidad, duracionEfecto);
+            Destruir();
+        }
+        else
+        {
+            Destruir();
+        }
     }
 }

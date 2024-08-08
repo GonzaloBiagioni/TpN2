@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : Personaje, IDamageable, Ihealable
 {
     public float moveSpeed = 5f;
+    private float velocidadBase;
     public GameObject shurikenPrefab; // Prefab del shuriken que se disparará
     public Transform firePoint; // Punto desde donde se disparará el shuriken
 
@@ -17,6 +18,7 @@ public class Player : Personaje, IDamageable, Ihealable
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        velocidadBase = moveSpeed; // Guardar la velocidad base al iniciar
     }
 
     void Update()
@@ -33,7 +35,7 @@ public class Player : Personaje, IDamageable, Ihealable
         }
 
         // Lógica de ataque
-        if (Input.GetKeyDown(KeyCode.Space)) // Si se presiona la barra espaciadora
+        if (Input.GetKeyDown(KeyCode.Space)) 
         {
             Atacar();
         }
@@ -83,6 +85,17 @@ public class Player : Personaje, IDamageable, Ihealable
         return true;
     }
 
+    public void IncrementarVelocidad(float incremento, float duracion)
+    {
+        moveSpeed += incremento; // Aumentar la velocidad
+        StartCoroutine(RestoreSpeedAfterDelay(duracion)); // Restaurar la velocidad después de la duración
+    }
+
+    private IEnumerator RestoreSpeedAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        moveSpeed = velocidadBase; // Restaurar la velocidad base
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         IColeccionable coleccionable = other.GetComponent<IColeccionable>();

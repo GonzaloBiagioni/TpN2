@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8946441439853757722}
   - component: {fileID: 5651283881544253188}
   - component: {fileID: 2064817496980578954}
+  - component: {fileID: -8971629548740726715}
   m_Layer: 0
   m_Name: WaterPot
   m_TagString: Untagged
@@ -130,3 +131,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1875, y: 0.22916667}
   m_EdgeRadius: 0
+--- !u!114 &-8971629548740726715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7782214646235011230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e17deeaf9ae859e49858176ee2841c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incrementoDeVelocidad: 2
+  duracionEfecto: 2

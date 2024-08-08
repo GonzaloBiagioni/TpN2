@@ -18,11 +18,16 @@ public class Enemigo : Personaje
     public float velocidadPerseguidor = 5f; // Velocidad de movimiento de perseguidor
     private float distance;
     public float distanciaPersecucion;
-    public GameObject player;
 
     public float tiempoEntreDisparos = 2f; // Intervalo de tiempo entre disparos en segundos
     private bool disparando = false;
 
+    public GameObject player;
+
+    private void Start()
+    {
+        
+    }
 
     public override void Atacar()
     {
@@ -64,7 +69,7 @@ public class Enemigo : Personaje
 
     public override void RecibirDaño()
     {
-        vida -= 1; 
+        vida -= 1;
 
         if (vida <= 0)
         {
@@ -115,6 +120,19 @@ public class Enemigo : Personaje
     // Método para moverse como perseguidor
     public void MoverPerseguidor()
     {
+        Debug.Log("movimiento");
+        Debug.Log("hola");
+        // Encuentra al jugador por su nombre
+        player = GameObject.Find("Player");
+
+        if (player == null)
+        {
+            Debug.LogError("El GameObject con el nombre 'NombreDelJugador' no fue encontrado en el método Start.");
+        }
+        else
+        {
+            Debug.Log("Jugador encontrado por nombre en Start.");
+        }
         StartCoroutine(MoverPerseguidorCoroutine());
     }
 
@@ -123,13 +141,20 @@ public class Enemigo : Personaje
     {
         while (true)
         {
-            distance = Vector2.Distance(transform.position, player.transform.position);
-
-            if (distance < distanciaPersecucion)
+            Debug.Log("while");
+            if (player != null)
             {
-                Vector2 direction = (player.transform.position - transform.position).normalized;
-                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, velocidadPerseguidor * Time.deltaTime);
+                Debug.Log("hay jugador");
+                distance = Vector2.Distance(transform.position, player.transform.position);
+
+                if (distance < distanciaPersecucion)
+                {
+                    Vector2 direction = (player.transform.position - transform.position).normalized;
+                    transform.position = Vector2.MoveTowards(transform.position, player.transform.position, velocidadPerseguidor * Time.deltaTime);
+                }
             }
+            else
+            { Debug.Log("NOUP"); }
 
             yield return null;
         }

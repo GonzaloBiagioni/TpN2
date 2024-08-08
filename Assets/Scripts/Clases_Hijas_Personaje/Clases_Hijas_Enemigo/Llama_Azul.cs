@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Llama_Azul : Enemigo
 {
+    private void Start()
+    {
+        moverse();
+    }
     public override void moverse()
     {
         base.moverse(); // esto se usa si el movimiento es igual al base

@@ -10,19 +10,6 @@ public class Pocion_Vida : Consumible
     }
     protected override void RealizarAccion()
     {
-        // Obtenemos la instancia de CanvasManager para manejar la recuperación de vida.
-        CanvasManager canvasManager = CanvasManager.Instance;
-
-        if (canvasManager != null)
-        {
-            // Intentamos recuperar la vida y verificamos si se pudo realizar.
-            bool vidaRecuperada = canvasManager.RecuperarHP();
-
-            if (vidaRecuperada)
-            {
-                // Si la vida fue recuperada, destruimos el objeto.
-                Destruir();
-            }
-        }
+        // acá hay que poner la lógica para que aumente la vida del personaje
     }
 }

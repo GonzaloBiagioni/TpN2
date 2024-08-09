@@ -23,10 +23,12 @@ public class Enemigo : Personaje
     private bool disparando = false;
 
     public GameObject player;
+    public GameManager gameManager;
 
     private void Start()
     {
-        
+        // Encuentra el GameManager en la escena
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     public override void Atacar()
@@ -79,6 +81,18 @@ public class Enemigo : Personaje
 
     private void Morir()
     {
+        // Verifica si el nombre del objeto es "Jefe"
+        if (gameObject.name == "Jefe")
+        {
+            if (gameManager != null)
+            {
+                gameManager.CambiarAEscenaVictoria();
+            }
+            else
+            {
+                Debug.LogWarning("GameManager no encontrado");
+            }
+        }
         Destroy(gameObject); 
         Instantiate(coinPrefab, transform.position, Quaternion.identity);
     }

@@ -24,4 +24,8 @@ public class GameManager : MonoBehaviour
         // Cerrar el juego
         Application.Quit();
     }
+    public void CambiarAEscenaVictoria()
+    {
+        SceneManager.LoadScene("Victoria");
+    }
 }

@@ -3615,7 +3615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c704295e2f565a34fa0074cefb4fb959, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contadorTexto: {fileID: 0}
+  contadorTexto: {fileID: 859585134}
   valorMoneda: 5
 --- !u!114 &386442771
 MonoBehaviour:
@@ -11367,6 +11367,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 961677772}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1818978265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1818978267}
+  - component: {fileID: 1818978266}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1818978266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818978265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba47c9c9bb3c1044db92f356ceb18c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1818978267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818978265}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.6964147, y: 0.45677033, z: -0.43845534}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1819760865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13660,11 +13704,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07575f2e16e10f04f8756119e2713533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 25
+  vida: 15
   "da\xF1o": 0
   VelocidadMovimiento: 0
   proyectilPrefab: {fileID: 1859209376845111495, guid: 7279900316a607c498c625a7648656bc, type: 3}
   puntoDeDisparo: {fileID: 1909320870710009376}
+  coinPrefab: {fileID: 0}
   MovimientoVertical: 0
   MovimientoPerseguidor: 0
   velocidad: 2
@@ -13674,6 +13719,7 @@ MonoBehaviour:
   distanciaPersecucion: 0
   tiempoEntreDisparos: 2
   player: {fileID: 0}
+  gameManager: {fileID: 1818978266}
 --- !u!1 &8213333567948660460
 GameObject:
   m_ObjectHideFlags: 0
@@ -13732,3 +13778,4 @@ SceneRoots:
   - {fileID: 961677772}
   - {fileID: 527564743903295357}
   - {fileID: 2145719786}
+  - {fileID: 1818978267}

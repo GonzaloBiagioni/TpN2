@@ -175,11 +175,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07575f2e16e10f04f8756119e2713533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 25
+  vida: 5
   "da\xF1o": 0
   VelocidadMovimiento: 0
   proyectilPrefab: {fileID: 1859209376845111495, guid: 7279900316a607c498c625a7648656bc, type: 3}
   puntoDeDisparo: {fileID: 2630143698943416655}
+  coinPrefab: {fileID: 0}
   MovimientoVertical: 0
   MovimientoPerseguidor: 0
   velocidad: 2
@@ -189,3 +190,4 @@ MonoBehaviour:
   distanciaPersecucion: 0
   tiempoEntreDisparos: 2
   player: {fileID: 0}
+  gameManager: {fileID: 0}
